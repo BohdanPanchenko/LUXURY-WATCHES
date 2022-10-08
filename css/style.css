@@ -64,8 +64,6 @@ a:hover {
     margin-bottom: 0;
 }
 
-.menu__item {}
-
 .menu__link {
     display: block;
     color: #000000;
@@ -255,6 +253,7 @@ a:hover {
     font-size: 16px;
     text-transform: uppercase;
     display: block;
+    width: fit-content;
     border: none;
     margin: 20px auto 80px;
     transition: 0.5s;
@@ -339,6 +338,9 @@ a:hover {
     }
     .header__bottom input:checked~.menu {
         display: flex;
+        order: 3;
+        flex-basis: 100%;
+        justify-content: center;
     }
     .header__bottom input:checked~label span:first-child {
         top: 50%;
@@ -356,20 +358,23 @@ a:hover {
     }
     .header__bottom {
         flex-direction: column;
-        /* padding-top: 30px; */
         row-gap: 25px;
     }
     .menu {
-        border-bottom: black solid;
+        /* border-bottom: black solid; */
     }
     .menu__list {
         flex-direction: column;
         align-items: center;
         padding-left: 0;
+        border-bottom: black solid;
     }
     .header__bottom {
         justify-self: flex-end;
+        flex-direction: row;
+        flex-wrap: wrap;
         margin-bottom: 35px;
+        padding-top: 25px;
     }
     .main__products {
         justify-content: center;
@@ -380,7 +385,9 @@ a:hover {
         flex-basis: 90%;
     }
     .cart {
-        align-self: flex-end;
+        /* align-self: flex-end; */
+        flex-grow: 1;
+        justify-content: flex-end;
     }
     .contact__icon {
         flex-shrink: 0;
