@@ -81,7 +81,6 @@ a:hover {
     display: flex;
     column-gap: 10px;
     align-items: center;
-    cursor: pointer;
 }
 
 .cart__text {
@@ -89,7 +88,7 @@ a:hover {
     color: #000;
 }
 
-.cart:hover .cart__text {
+.cart__text:hover {
     text-decoration: underline;
 }
 
