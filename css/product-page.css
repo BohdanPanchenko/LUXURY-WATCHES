@@ -48,6 +48,7 @@
     .gallery__selected-img {
         border: 1px solid #D1CFCF;
         transition: 0.7s;
+        vertical-align: middle;
     }
     
     .gallery__selected-img img {
